@@ -16,7 +16,7 @@ import { ImageService } from 'src/image-service/image-service.service';
 export class AdminController {
  adminData:CreateAdminDto
    // constructor(private adminService:AdminService) {
-        constructor(private imageService:ImageService,private adminService:AdminService,private readonly encryptionService: EncryptionService,@InjectModel(Admin.name) private readonly adminModel: Model<Admin>) {}
+        constructor() {}
       // this.admin=new CreateAdminDto()
    // }
 
@@ -80,4 +80,4 @@ export class AdminController {
 //     //     // Compare the provided password with the hashed password stored in the database
 //     //     return false
 //     // }
-// }
+ }
